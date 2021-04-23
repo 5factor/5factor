@@ -13,7 +13,7 @@ on:
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
-    if: "github.repository == 'lowlighter/lowlighter'"
+    if: "github.repository == 'undecidedsource/undecidedsource'"
     steps:
       # ======================================================================================
       # 🌇 GitHub Skyline 3D calendar
@@ -29,5 +29,5 @@ jobs:
           plugin_skyline_year: 2020
           plugin_skyline_frames: 6
           plugin_skyline_quality: 1
-          plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
+          plugins_errors_fatal: ${{ github.repository == 'undecidedsource/undecidedsource' }}
           output_action: pull-request
